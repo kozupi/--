@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{7800C4D6-7FCC-4B2C-9864-D22D457E9CC3}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project2</RootNamespace>
+    <AssemblyName>Project2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>Reach</XnaProfile>
+    <XnaCrossPlatformGroupID>f5d653a5-cd15-4e7a-aef0-3d34ea47d3a6</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DPSF">
+      <HintPath>bin\x86\Debug\DPSF.dll</HintPath>
+    </Reference>
+    <Reference Include="Indiefreaks.AOP.Profiler, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\Indiefreaks.AOP.Profiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Indiefreaks.Xna.Profiler, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Debug\Indiefreaks.Xna.Profiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutomatedSprite.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Component Managers\CollidableManager.cs" />
+    <Compile Include="Component Managers\SpriteManager.cs" />
+    <Compile Include="Component\Collidable.cs" />
+    <Compile Include="Component\Component.cs" />
+    <Compile Include="Component\Drawable2D.cs" />
+    <Compile Include="Component\Drawable3D.cs" />
+    <Compile Include="Component\DrawableString.cs" />
+    <Compile Include="Component\Guns\Flare.cs" />
+    <Compile Include="Component\Guns\MachineGun.cs" />
+    <Compile Include="Component\Guns\Missiles.cs" />
+    <Compile Include="Component\Pathing\Pathing.cs" />
+    <Compile Include="Component\Pathing\PathingBspline.cs" />
+    <Compile Include="Component\Pathing\PathingChase.cs" />
+    <Compile Include="Component\PathingCollection.cs" />
+    <Compile Include="Component\Pathing\PathingEvade.cs" />
+    <Compile Include="Component\Pathing\PathingWander.cs" />
+    <Compile Include="Component\PlayerSpatial.cs" />
+    <Compile Include="Component\Powerable.cs" />
+    <Compile Include="Component\Guns\Shootable.cs" />
+    <Compile Include="Component\WeaponHudElements\LockOn.cs" />
+    <Compile Include="Component\WeaponHudElements\LockOnBackGound.cs" />
+    <Compile Include="Component\WeaponHudElements\Retical.cs" />
+    <Compile Include="Component\Spatial.cs" />
+    <Compile Include="Component\Controllable.cs" />
+    <Compile Include="Component\Spatial2D.cs" />
+    <Compile Include="Component\WeaponHudElements\WeaponController.cs" />
+    <Compile Include="CurvePath.cs" />
+    <Compile Include="CustomLight.cs" />
+    <Compile Include="Entity Managers\Building Manager.cs" />
+    <Compile Include="Entity Managers\BulletManager.cs" />
+    <Compile Include="Entity Managers\EnemyManager.cs" />
+    <Compile Include="Entity Managers\PowerUpManager.cs" />
+    <Compile Include="Entity Managers\RollingTextManager.cs" />
+    <Compile Include="Entity\Building.cs" />
+    <Compile Include="Entity\Bullet.cs" />
+    <Compile Include="Entity\City.cs" />
+    <Compile Include="Entity\DebugShape.cs" />
+    <Compile Include="Entity\Enemy.cs" />
+    <Compile Include="Controls.cs" />
+    <Compile Include="Entity\Entity.cs" />
+    <Compile Include="Entity\Missile.cs" />
+    <Compile Include="Entity\Player.cs" />
+    <Compile Include="Entity\PowerUp\PowerUp.cs" />
+    <Compile Include="Entity\PowerUp\Ring.cs" />
+    <Compile Include="Entity\RollingText.cs" />
+    <Compile Include="Entity\PowerUp\Shield.cs" />
+    <Compile Include="Entity\BasicModel.cs" />
+    <Compile Include="Entity\Shrapnel.cs" />
+    <Compile Include="Events\CollisionEvent.cs" />
+    <Compile Include="Component Managers\ModelManager.cs" />
+    <Compile Include="Intro.cs" />
+    <Compile Include="Menus\MainMenu.cs" />
+    <Compile Include="Menus\OptionsMenu.cs" />
+    <Compile Include="Menus\PauseMenu.cs" />
+    <Compile Include="Menus\SelectText.cs" />
+    <Compile Include="ModelExtractor.cs" />
+    <Compile Include="Particle Systems\CloudParticleSystem.cs" />
+    <Compile Include="Particle Systems\ExplosionParticleSystem.cs" />
+    <Compile Include="Particle Systems\ExplosionSmokeParticleSystem.cs" />
+    <Compile Include="Particle Systems\FlameParticleSystem.cs" />
+    <Compile Include="Particle Systems\MissileExhaustParticleSystem.cs" />
+    <Compile Include="Particle Systems\ParticleEmitter.cs" />
+    <Compile Include="Particle Systems\ParticleSettings.cs" />
+    <Compile Include="Particle Systems\ParticleSystem.cs" />
+    <Compile Include="Particle Systems\ParticleVertex.cs" />
+    <Compile Include="Particle Systems\ShipExhaustParticleSystem.cs" />
+    <Compile Include="Particle Systems\ShrapnelParticleSytem.cs" />
+    <Compile Include="Particle Systems\StationaryParticleEmitter.cs" />
+    <Compile Include="ParticleEmitterManager.cs" />
+    <Compile Include="PathControlledSprite.cs" />
+    <Compile Include="PivotTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Game1.cs" />
+    <Compile Include="SoundManager.cs" />
+    <Compile Include="Sprite.cs" />
+    <Compile Include="SpriteManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png">
+      <XnaPlatformSpecific>true</XnaPlatformSpecific>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Project2Content\Project2Content.contentproj">
+      <Name>Project2Content</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)igp.exe" "$(TargetPath)"</PostBuildEvent>
+  </PropertyGroup>
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>
